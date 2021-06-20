@@ -1,0 +1,5 @@
+Connected to (192.168.43.195:47453)
+Connected to (192.168.43.195:57227)
+Connected to (192.168.43.195:55507)
+Receiving Dead node message: Dead Node:192.168.43.195:55507:2020-09-09-Time-16-50-47.575946:192.168.43.195:47453
+Receiving Dead node message: Dead Node:192.168.43.195:55507:2020-09-09-Time-16-50-52.876575:192.168.43.195:57227

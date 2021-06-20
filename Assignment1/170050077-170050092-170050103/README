@@ -1,0 +1,17 @@
+Steps to follow while executing:
+    1. Execute seed.py 'n' number of times
+    2. At each execution IP Addr and port is printed on command line. Add these to config.csv
+        Sample config.csv:
+            ip_addr,port
+            192.168.43.195,49863
+            192.168.43.195,53474
+        Note: Please check there is no spacing
+    3. Execute peer.py now and check outputs
+
+Executing seed.py:
+    python3 seed.py [-h] [-o/--outputfile OUTPUTFILE]
+    Eg: python3 seed.py -o outputseed.txt
+
+Executing peer.py:
+    python3 peer.py [-h] [-o/--outputfile OUTPUTFILE] [-c/--configfile CONFIGFILE]
+    Eg: python3 peer.py -o outputpeer.txt -c config.csv

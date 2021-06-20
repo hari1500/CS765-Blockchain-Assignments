@@ -1,0 +1,37 @@
+Libraries required:
+    numpy, sqlite3, networkx, csv, socket, threading, re, argparse, datetime, hashlib, time, os, random
+Extra installations:
+    pip3 install numpy
+    pip3 install networkx
+    pip3 install pydot
+    sudo apt install graphviz
+
+Instructions to run the code:
+    1. Start some seeds in n different terminals
+        python3 seed.py -o outputseed2.txt
+            -o is output_file_path
+    2. Copy ip and port values displayed in terminals to config.csv file
+    3. Start running miner.py and adversary.py files
+        python3 miner.py -i 1 -hp 0.022222 -db db/db10 -o outputpeer10.txt
+            -i is inter_arrival_time
+            -hp is hashing_power
+            -db is database_file_path
+            -o is output_file_path
+        python3 adversary.py -i 1 -hp 0.022222 -db db/db10 -o outputpeer10.txt -n 3
+            -i is inter_arrival_time
+            -hp is hashing_power
+            -db is database_file_path
+            -o is output_file_path
+            -n is number_of_nodes_to_be_flooded
+
+        one case of running 30 miners and 3 adversaries is automated in startMiners.sh file
+            bash startMiners.sh
+
+    4. After running "bash startMiners.sh" database (sqlite3) files will be saved in db directory 
+        Each db file contains timestamp column to check the code execution time
+    5. mining power utilization and fraction of longest chain blocks mined by adversary can be calculated using
+        python3 processing.py
+    6. To visualize blockchain 
+        python3 drawBlockchain.py -db db/db10 -o chain10.png
+            -db is database_file_path
+            -o is output_file_path

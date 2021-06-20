@@ -1,0 +1,9 @@
+.vscode/
+Assignment1/.vscode/
+Assignment2/.vscode/
+__pycache__/
+Assignment1/__pycache__/
+Assignment2/__pycache__/
+
+Assignment2/db/
+Assignment2/blockchains/
